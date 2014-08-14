@@ -1,1 +1,34 @@
-Hello world
+<div class="row" id="homepage-container">
+  <div class="col-sm-3" id="navbar">
+    <div class="row">
+      <div class="col-xs-12" id="logo-container">
+      </div>
+      <div class="col-xs-12" id="navbar-menu-container">
+        <ul>
+          <li class="navbar-menu-option"><%= link_to 'HOME', "#" %></li>
+          <li class="navbar-menu-option"><%= link_to 'JEWELRY', "#" %></li>
+          <li class="navbar-menu-suboption"><%= link_to 'necklaces', "#" %></li>
+          <li class="navbar-menu-suboption"><%= link_to 'braclets', "#" %></li>
+          <li class="navbar-menu-suboption"><%= link_to 'rings', "#" %></li>
+          <li class="navbar-menu-suboption"><%= link_to 'cuffs', "#" %></li>
+          <li class="navbar-menu-option"><%= link_to 'ABOUT US', "#" %></li>
+          <li class="navbar-menu-option"><%= link_to 'PRESS', "#" %></li>
+        </ul>
+        <ul>
+          <li class="social-media-option"><%= link_to image_tag("facebook_logo.jpg", class: "facebook-logo"), "#" %></li>
+          <li class="social-media-option"><%= link_to image_tag("instagram_logo.jpg", class: "instagram-logo"), "#" %></li>
+          <li class="social-media-option"><%= link_to image_tag("twitter_logo.jpg", class: "twitter-logo"), "#" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9" id="product-image-highlight-container">
+    <div class="col-xs-12" id="user-auth-options-container">
+      <ul>
+        <li class="user-auth-option"><a href="#">sign up</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+        <li class="user-auth-option"><a href="#">login</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+        <li class="user-auth-option"><%= link_to image_tag("shopping_cart.jpg", class: "shopping-cart-icon"), "#" %></li>
+      </ul>
+    </div>
+  </div>
+</div>

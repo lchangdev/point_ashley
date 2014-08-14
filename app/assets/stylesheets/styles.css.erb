@@ -1,0 +1,181 @@
+html,
+body,
+.container-fluid,
+#homepage-container,
+#navbar,
+#product-image-highlight-container {
+  height: 100%;
+}
+
+/* --------- navbar --------- */
+
+#navbar {
+  background-color: black;
+  color: white;
+  font-weight: 100;
+  overflow: auto;
+}
+
+#logo-container {
+  height: 300px;
+  background: url('<%= asset_path("point_ashley_logo.jpg") %>') no-repeat center;
+  background-size: 300px 300px;
+}
+
+.navbar-menu-option {
+  list-style-type: none;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+
+.navbar-menu-suboption {
+  font-style: italic;
+  list-style-type: none;
+  padding-top: 5px;
+  font-family: "Times New Roman";
+}
+
+#navbar-menu-container li:nth-child(3) {
+  padding-top: 20px;
+}
+
+#navbar-menu-container li:nth-child(6) {
+  padding-bottom: 20px;
+}
+
+.navbar-menu-option a,
+.navbar-menu-suboption a {
+  color: white;
+}
+
+.social-media-option {
+  display: inline;
+  padding-right: 10px;
+}
+
+.twitter-logo {
+  height: 35px;
+  width: 35px;
+}
+/* ---------- user authentication navbar ---------- */
+
+#user-auth-options-container {
+  text-align: right;
+  padding-top: 30px;
+  font-family: "Times New Roman";
+}
+
+#user-auth-options-container li:first-child {
+  padding-left: 10px;
+}
+
+.user-auth-option {
+  display: inline;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.user-auth-option a {
+  color: #282828;
+  font-style: italic;
+}
+
+.shopping-cart-icon {
+  height: 25px;
+  width: 25px;
+}
+
+/* ---------- homepage content ---------- */
+
+#product-image-highlight-container {
+  background: url('<%= asset_path("product_background.jpg") %>') no-repeat center;
+  background-size: cover;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  position: fixed;
+  text-align: right;
+  padding-right: 20px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 200;
+  font-family: "Times New Roman";
+}
+
+/* ----------- media queries ----------- */
+
+/* ----- tablet ----- */
+@media (max-width: 768px) {
+  #navbar {
+    height: 300px;
+  }
+
+  #logo-container {
+    height: 250px;
+    background-size: 250px 250px;
+  }
+
+  #navbar-menu-container ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-media-option {
+    display: none;
+  }
+  .navbar-menu-option {
+    display: inline;
+    font-size: 12px;
+  }
+
+  .navbar-menu-suboption {
+    display: none;
+  }
+
+  #user-auth-options-container {
+    position: fixed;
+    text-align: right;
+    padding-right: 40px;
+    width: 100%;
+    top: 0;
+  }
+
+  .user-auth-option {
+    background-color: transparent;
+    color: #cd7f32;
+  }
+
+  .user-auth-option a {
+    color: #cd7f32;
+    font-weight: 200;
+  }
+  #product-image-highlight-container {
+    background-size: contain;
+    height: 500px;
+  }
+}
+
+/* ----- desktops ----- */
+@media (max-width: 992px) {
+  #logo-container {
+    height: 200px;
+    background-size: 200px 200px;
+  }
+}
+
+/* ----- large screens ----- */
+@media (max-width: 1200px) {
+
+}
